@@ -3,7 +3,7 @@ import Foundation
 class Storage {
     var array = [Chip]()
     private let lock = NSLock()
-    var isAveilable = false
+    var isAvailable = false
 
     var isEmpty: Bool {
         array.isEmpty
