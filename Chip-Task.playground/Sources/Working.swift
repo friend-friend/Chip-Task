@@ -1,14 +1,14 @@
 import Foundation
 
-class WorkingThread: Thread {
+public class WorkingThread: Thread {
 
     private let storage: Storage
 
-    init(storage: Storage) {
+    public init(storage: Storage) {
         self.storage = storage
     }
 
-    override func main() {
+    public override func main() {
         repeat {
             storage.pop().sodering()
             print("""

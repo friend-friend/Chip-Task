@@ -1,6 +1,6 @@
 import Foundation
 
-class Storage {
+public class Storage {
     var array = [Chip]()
     private let lock = NSLock()
     var isAvailable = false
@@ -16,7 +16,7 @@ class Storage {
         return value
     }
 
-    init() {}
+    public init() {}
 
     func push(newElement: Chip) {
         lock.lock()
