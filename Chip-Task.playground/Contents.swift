@@ -1,3 +1,11 @@
-import UIKit
+import Foundation
+import PlaygroundSupport
 
-var greeting = "Hello, playground"
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+let storage = Storage()
+let generatingThread = GeneratingThread(storage: storage)
+generatingThread.start()
+
+let workingThread = WorkingThread(storage: storage)
+workingThread.start()
